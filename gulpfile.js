@@ -24,7 +24,7 @@ gulp.task("server", function () {
 //Compress, add min prefix to css file, add autoprefix then clean css, put its in css folder and reload browsersync plugin
 gulp.task("styles", function () {
    return gulp
-      .src("./src/sass/**/*.+(scss|sass)")
+      .src("./src/scss/**/*.+(scss|sass)")
       .pipe(sourcemaps.init())
       .pipe(sass.sync({ outputStyle: "compressed" }).on("error", sass.logError))
       .pipe(autoprefixer())
@@ -42,10 +42,12 @@ gulp.task("styles", function () {
 
 //Wath for changes of sass/scss files and html
 gulp.task("watch", function () {
-   gulp.watch("./src/sass/**/*.+(scss|sass|css)", gulp.parallel("styles"));
+   gulp.watch("./src/scss/**/*.+(scss|sass|css)", gulp.parallel("styles"));
    gulp.watch("./src/**/*.html").on("change", browserSync.reload);
    gulp.watch("./src/**/*.html").on("change", gulp.parallel("html"));
    gulp.watch("./src/js/**/*.js").on("change", gulp.parallel("scripts"));
+   gulp.watch("src/images/**/*.*").on("change", browserSync.reload);
+   gulp.watch("src/images/**/*.*").on("add", browserSync.reload);
 });
 
 gulp.task("html", function () {

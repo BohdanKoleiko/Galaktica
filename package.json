@@ -2,20 +2,20 @@
    "name": "markify",
    "version": "1.0.0",
    "description": "Markify is a test task for a frontend developer role from Galaktika company",
-   "main": "script.js",
+   "main": "",
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/HamaHs/Markai.git"
+      "url": "git+https://github.com/BohdanKoleiko/Galaktica.git"
    },
    "author": "Bohdan Koleiko",
    "license": "ISC",
    "bugs": {
-      "url": "https://github.com/HamaHs/Markai/issues"
+      "url": "https://github.com/BohdanKoleiko/Galaktica/issues"
    },
-   "homepage": "https://github.com/HamaHs/Markai#readme",
+   "homepage": "https://github.com/BohdanKoleiko/Galaktica#readme",
    "devDependencies": {
       "browser-sync": "^2.27.10",
       "gulp": "^4.0.2",

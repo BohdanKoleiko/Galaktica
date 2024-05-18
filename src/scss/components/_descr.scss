@@ -1,0 +1,16 @@
+.descr {
+   &__item {
+   }
+
+   &__title {
+      margin-bottom: 16px;
+   }
+
+   &__item-txt {
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #585858;
+   }
+}

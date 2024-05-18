@@ -12,22 +12,26 @@
    <body>
       <div class="content-wrapper">
          <header class="header">
-            <div class="container">
-               <div class="header__inner">
-                  <figure class="header__logo logo">
-                     <img src="./images/logo.svg" alt="main logo" />
-                  </figure>
+            <div class="header__wrapper">
+               <div class="container">
+                  <div class="header__inner">
+                     <a href="#">
+                        <figure class="header__logo logo">
+                           <img src="./images/logo.svg" alt="main logo" />
+                        </figure>
+                     </a>
 
-                  <nav class="header__nav nav">
-                     <ul>
-                        <li><a href="#">Affiliates</a></li>
-                        <li><a href="#">Advertisers</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Blog</a></li>
-                     </ul>
+                     <nav class="header__nav nav">
+                        <ul class="nav__menu">
+                           <li data-active="active"><a href="#">Affiliates</a></li>
+                           <li data-active=""><a href="#">Advertisers</a></li>
+                           <li data-active=""><a href="#">Events</a></li>
+                           <li data-active=""><a href="#">Blog</a></li>
+                        </ul>
 
-                     <button type="button">Sign up</button>
-                  </nav>
+                        <button type="button" class="btn btn-main nav__btn">Sign up</button>
+                     </nav>
+                  </div>
                </div>
             </div>
          </header>

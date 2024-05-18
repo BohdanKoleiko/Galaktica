@@ -21,6 +21,7 @@ body {
    flex-direction: column;
    justify-content: space-between;
    min-height: 100%;
+   overflow: hidden;
 }
 
 .container {
@@ -37,8 +38,10 @@ body {
 @import "./components/title";
 @import "./components/rows";
 @import "./components/underline";
+@import "./components/partner";
 
 //
 // BLOCKS
 @import "./blocks/header";
 @import "./blocks/hero";
+@import "./blocks/partners";

@@ -1,0 +1,26 @@
+.nav {
+   &__menu {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 46px;
+      margin-right: 64px;
+
+      font-family: $font-family;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+      color: #585858;
+      transition: all 0.1s ease-out;
+
+      @media (hover: hover) {
+         li:hover {
+            color: #e9a923;
+         }
+      }
+
+      li[data-active="active"] {
+         color: #e9a923;
+      }
+   }
+}

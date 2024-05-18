@@ -1,2 +1,22 @@
 .header {
+   &__wrapper {
+      padding: 24px 0;
+   }
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+   }
+
+   &__logo {
+      margin-right: 40px;
+   }
+
+   &__nav {
+      display: flex;
+      width: 100%;
+      max-width: 555px;
+   }
 }

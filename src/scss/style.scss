@@ -28,3 +28,13 @@ body {
    margin: 0 auto;
    padding: 0 40px;
 }
+
+//
+// COMPONENTS
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/button";
+
+//
+// BLOCKS
+@import "./blocks/header";

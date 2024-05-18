@@ -34,7 +34,11 @@ body {
 @import "./components/logo";
 @import "./components/nav";
 @import "./components/button";
+@import "./components/title";
+@import "./components/rows";
+@import "./components/underline";
 
 //
 // BLOCKS
 @import "./blocks/header";
+@import "./blocks/hero";

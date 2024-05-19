@@ -1,0 +1,75 @@
+.footer {
+   background: #f9f1ee;
+
+   &__inner {
+      padding: 60px 0;
+      text-align: center;
+   }
+
+   &__logo {
+      margin: 0 auto 24px;
+   }
+
+   &__nav {
+      margin-bottom: 28px;
+      > .nav__menu {
+         justify-content: center;
+         row-gap: 40px;
+         margin: 0;
+      }
+   }
+
+   &__socials {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 28px;
+   }
+   &__facebook,
+   &__linkedin,
+   &__instagram {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: $bg-color-1;
+      transition: background-color 0.1s ease-out;
+
+      > svg {
+         display: block;
+         width: 65%;
+         height: 65%;
+         object-fit: contain;
+      }
+
+      &:hover {
+         background-color: $bg-color-2;
+      }
+   }
+
+   &__facebook {
+      border-radius: 100%;
+   }
+
+   &__linkedin {
+      border-radius: 5px;
+   }
+
+   &__instagram {
+      border-radius: 100%;
+   }
+
+   &__contact-title {
+      margin-bottom: 12px;
+   }
+
+   &__contact-link {
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      color: #585858;
+   }
+}

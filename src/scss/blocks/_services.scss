@@ -1,0 +1,84 @@
+.services {
+   &__inner {
+      padding: 75px 0;
+   }
+
+   &__title {
+      margin-bottom: 40px;
+   }
+
+   &__cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+      grid-template-rows: repeat(2, 127px);
+      grid-auto-rows: auto;
+      gap: 24px;
+   }
+
+   &__card {
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+
+      &_bg {
+         &_byzantium {
+            background-color: #7f3a6a;
+         }
+
+         &_harvest-gold {
+            background-color: #e9a923;
+         }
+      }
+
+      &_dir-column {
+         .services__card-items {
+            flex-direction: column;
+         }
+      }
+
+      &_dir-row {
+         .services__card-items {
+            flex-wrap: wrap;
+            flex-direction: row;
+         }
+      }
+
+      &:nth-child(1) {
+         padding: 24px;
+         grid-row-start: 1;
+         grid-row-end: 3;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+         padding: 16px 24px 28px;
+         grid-column-start: 2;
+      }
+
+      &:nth-child(2) {
+         grid-row-start: 1;
+         grid-row-end: 2;
+      }
+
+      &:nth-child(3) {
+         grid-row-start: 2;
+         grid-row-end: 3;
+      }
+   }
+
+   &__card-title {
+      margin-bottom: 24px;
+   }
+
+   &__card-items {
+      display: inline-flex;
+      row-gap: 24px;
+      column-gap: 28px;
+
+      font-family: $font-family;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 140%;
+      text-transform: capitalize;
+   }
+}

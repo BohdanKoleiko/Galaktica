@@ -15,22 +15,90 @@
             <div class="header__wrapper">
                <div class="container">
                   <div class="header__inner">
-                     <a href="/">
-                        <figure class="header__logo logo">
+                     <figure class="header__logo logo">
+                        <a href="/">
                            <img src="./images/logo.svg" alt="main logo" />
-                        </figure>
-                     </a>
+                        </a>
+                     </figure>
 
-                     <nav class="header__nav nav">
-                        <ul class="nav__menu">
-                           <li data-active="active"><a href="#">Affiliates</a></li>
-                           <li data-active=""><a href="#">Advertisers</a></li>
-                           <li data-active=""><a href="#">Events</a></li>
-                           <li data-active=""><a href="#">Blog</a></li>
-                        </ul>
+                     <nav class="header__nav nav" id="header__nav">
+                        <div class="header__nav-header">
+                           <figure class="logo">
+                              <a href="/">
+                                 <img src="./images/logo.svg" alt="main logo" />
+                              </a>
+                           </figure>
 
-                        <button type="button" class="btn btn-main nav__btn">Sign up</button>
+                           <div class="header__burger-close">
+                              <a href="#">
+                                 <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                 >
+                                    <path
+                                       d="M3 21.5L21.5 3"
+                                       stroke="#7F3A6A"
+                                       stroke-width="3"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="bevel"
+                                    />
+                                    <path
+                                       d="M3 3L21.5 21.5"
+                                       stroke="#7F3A6A"
+                                       stroke-width="3"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="bevel"
+                                    />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+
+                        <div class="header__menu-wrapper">
+                           <ul class="nav__menu">
+                              <li data-active="active"><a href="#">Affiliates</a></li>
+                              <li data-active=""><a href="#">Advertisers</a></li>
+                              <li data-active=""><a href="#">Events</a></li>
+                              <li data-active=""><a href="#">Blog</a></li>
+                           </ul>
+
+                           <button type="button" class="btn btn-main nav__btn">Sign up</button>
+                        </div>
                      </nav>
+
+                     <div class="header__burger-open">
+                        <a href="#header__nav">
+                           <svg
+                              width="28"
+                              height="20"
+                              viewBox="0 0 28 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 d="M2 2H26"
+                                 stroke="#7F3A6A"
+                                 stroke-width="3"
+                                 stroke-linecap="round"
+                              />
+                              <path
+                                 d="M2 10H26"
+                                 stroke="#7F3A6A"
+                                 stroke-width="3"
+                                 stroke-linecap="round"
+                              />
+                              <path
+                                 d="M2 18H26"
+                                 stroke="#7F3A6A"
+                                 stroke-width="3"
+                                 stroke-linecap="round"
+                              />
+                           </svg>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>

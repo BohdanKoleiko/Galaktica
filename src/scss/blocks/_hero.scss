@@ -1,26 +1,6 @@
 .hero {
    &__inner {
-      display: grid;
-      grid-template-columns: minmax(auto, 460px) 1fr;
-      grid-template-rows: minmax(461px, 100%) auto;
-      align-items: center;
-      column-gap: calc(122 * 100% / 1140);
-      row-gap: 32px;
       padding-top: 42px;
-   }
-
-   &__logo {
-      width: 100%;
-      height: 100%;
-      max-width: 460px;
-      max-height: 461px;
-
-      > img {
-         display: block;
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-      }
    }
 
    &__title {

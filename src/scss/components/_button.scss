@@ -5,17 +5,17 @@
    font-size: 16px;
    line-height: 150%;
    text-transform: capitalize;
-   color: #fff;
+   color: $main-white-color;
    border-radius: 5px;
    transition: all 0.1s ease-out;
 
    &-main {
       width: 111px;
       min-width: 111px;
-      background: #7f3a6a;
+      background: $main-color;
       @media (hover: hover) {
          &:hover {
-            background: #e9a923;
+            background: $secondary-color;
          }
       }
    }
@@ -23,11 +23,11 @@
    &-second {
       width: 170px;
       min-width: 170px;
-      background: #e9a923;
+      background: $secondary-color;
       @media (hover: hover) {
          &:hover {
-            color: #7f3a6a;
-            background: #fff;
+            color: $main-color;
+            background: $main-white-color;
          }
       }
    }

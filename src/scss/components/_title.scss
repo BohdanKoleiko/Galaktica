@@ -3,7 +3,7 @@
    font-weight: 700;
    line-height: 140%; /* or 62px */
    text-transform: capitalize;
-   color: #313131;
+   color: $txt-title-color;
 
    &_type {
       &_h1 {
@@ -21,7 +21,7 @@
 
    &_color {
       &_white {
-         color: #ffffff;
+         color: $main-white-color;
       }
    }
 

@@ -1,0 +1,14 @@
+@keyframes running-row {
+   0% {
+      transform: translateX(0%);
+      animation-timing-function: linear;
+   }
+   50% {
+      transform: translateX(25%);
+      animation-timing-function: linear;
+   }
+   100% {
+      transform: translateX(50%);
+      animation-timing-function: linear;
+   }
+}

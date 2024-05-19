@@ -13,7 +13,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 150%;
-      color: #585858;
+      color: $txt-color;
    }
 
    &__rows {
@@ -30,7 +30,7 @@
       top: 50%;
       left: 50%;
       width: 102%;
-      height: 1vw;
+      height: 5vw;
       max-height: 61px;
       min-height: 43px;
 

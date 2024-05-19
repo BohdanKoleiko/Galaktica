@@ -16,17 +16,17 @@
    }
 
    &__card {
-      color: white;
+      color: $main-white-color;
       text-align: center;
       border-radius: 10px;
 
       &_bg {
          &_byzantium {
-            background-color: #7f3a6a;
+            background-color: $main-color;
          }
 
          &_harvest-gold {
-            background-color: #e9a923;
+            background-color: $secondary-color;
          }
       }
 
@@ -83,14 +83,18 @@
    }
 }
 
+@media screen and (max-width: 992px) {
+   .services {
+      &__title {
+         text-align: center;
+      }
+   }
+}
+
 @media screen and (max-width: 768px) {
    .services {
       &__inner {
          padding: 40px 0;
-      }
-
-      &__title {
-         text-align: center;
       }
 
       &__card {

@@ -14,3 +14,16 @@
       column-gap: calc(170 * 100% / 1140);
    }
 }
+
+@media screen and (max-width: 768px) {
+   .about {
+      &__inner {
+         padding: 40px 0;
+      }
+
+      &__descr {
+         flex-direction: column;
+         row-gap: 24px;
+      }
+   }
+}

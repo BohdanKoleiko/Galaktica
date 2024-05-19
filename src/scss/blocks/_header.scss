@@ -55,7 +55,8 @@
          right: -100%;
          z-index: 100;
 
-         width: 375px;
+         width: 100%;
+         max-width: none;
          height: 100%;
 
          flex-direction: column;
@@ -65,7 +66,7 @@
          margin: 0;
 
          background-color: $main-white-color;
-         transition: right 0.6s ease-in;
+         transition: right 0.3s ease-in;
 
          &:target {
             right: 0%;

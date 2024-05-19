@@ -1,10 +1,5 @@
 .partners {
    &__inner {
-      display: grid;
-      grid-template-columns: 1fr minmax(285px, 461px);
-      grid-auto-rows: auto;
-      align-items: center;
-      column-gap: calc(122 * 100% / 1140);
       padding: 75px 0;
    }
 
@@ -32,6 +27,24 @@
          width: 100%;
          height: 100%;
          object-fit: cover;
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .partners {
+      &__inner {
+         padding: 40px 0;
+      }
+
+      &__partners-labels {
+         grid-template-columns: repeat(auto-fit, 100%);
+         gap: 20px;
+
+         > div:first-child {
+            grid-column-start: auto;
+            grid-column-end: auto;
+         }
       }
    }
 }

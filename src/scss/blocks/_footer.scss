@@ -1,5 +1,5 @@
 .footer {
-   background: #f9f1ee;
+   background: $bg-color-1;
 
    &__inner {
       padding: 60px 0;
@@ -33,18 +33,20 @@
       align-items: center;
       width: 40px;
       height: 40px;
-      background-color: $bg-color-1;
+      background-color: $main-color;
       transition: background-color 0.1s ease-out;
 
       > svg {
          display: block;
-         width: 65%;
-         height: 65%;
+         width: 60%;
+         height: 60%;
          object-fit: contain;
       }
 
-      &:hover {
-         background-color: $bg-color-2;
+      @media (hover: hover) {
+         &:hover {
+            background-color: $secondary-color;
+         }
       }
    }
 
@@ -70,6 +72,29 @@
       font-size: 16px;
       line-height: 150%;
       text-align: center;
-      color: #585858;
+      color: $txt-color;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .footer {
+      &__inner {
+         padding: 64px 0 32px;
+      }
+
+      &__logo {
+         margin: 0 auto 40px;
+      }
+
+      &__nav {
+         > .nav__menu {
+            row-gap: 29px;
+            flex-direction: column;
+         }
+      }
+
+      &__contact-title {
+         margin-bottom: 8px;
+      }
    }
 }

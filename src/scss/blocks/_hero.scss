@@ -1,6 +1,7 @@
 .hero {
    &__inner {
       padding-top: 42px;
+      padding-bottom: 32px;
    }
 
    &__title {
@@ -39,6 +40,37 @@
 
       &:last-child {
          transform: translate(-50%, -50%) rotate(6.5deg);
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .hero {
+      &__inner {
+         padding-top: 12px;
+         padding-bottom: 24px;
+      }
+
+      &__title {
+         margin-bottom: 24px;
+      }
+
+      &__rows {
+         height: 135px;
+      }
+   }
+}
+
+@media screen and (max-width: 481px) {
+   .hero {
+      &__row {
+         &:first-child {
+            transform: translate(-50%, -50%) rotate(-8.5deg);
+         }
+
+         &:last-child {
+            transform: translate(-50%, -50%) rotate(8.5deg);
+         }
       }
    }
 }

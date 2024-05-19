@@ -8,3 +8,9 @@
    border-radius: 10px;
    text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+   .partner {
+      max-width: none;
+   }
+}

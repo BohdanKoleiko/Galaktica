@@ -9,8 +9,8 @@
 
    &__cards {
       display: grid;
-      grid-template-columns: repeat(2, minmax(200px, 1fr));
-      grid-template-rows: repeat(2, 127px);
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+      grid-template-rows: repeat(2, auto);
       grid-auto-rows: auto;
       gap: 24px;
    }
@@ -80,5 +80,53 @@
       font-size: 18px;
       line-height: 140%;
       text-transform: capitalize;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .services {
+      &__inner {
+         padding: 40px 0;
+      }
+
+      &__title {
+         text-align: center;
+      }
+
+      &__card {
+         &:nth-child(1),
+         &:nth-child(2),
+         &:nth-child(3) {
+            padding: 16px 0;
+         }
+
+         &:nth-child(1) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+         }
+
+         &:nth-child(2),
+         &:nth-child(3) {
+            grid-column-start: unset;
+         }
+
+         &:nth-child(2) {
+            grid-row-start: unset;
+            grid-row-end: unset;
+         }
+
+         &:nth-child(3) {
+            grid-row-start: unset;
+            grid-row-end: unset;
+         }
+
+         &_dir-row {
+            .services__card-items {
+               flex-direction: column;
+            }
+         }
+      }
    }
 }

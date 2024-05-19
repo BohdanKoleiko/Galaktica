@@ -23,3 +23,10 @@
       }
    }
 }
+
+@media screen and (max-width: 992px) {
+   .info-block {
+      flex-direction: column;
+      row-gap: 40px;
+   }
+}

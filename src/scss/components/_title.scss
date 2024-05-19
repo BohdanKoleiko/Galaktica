@@ -1,0 +1,43 @@
+.title {
+   font-family: $second-family;
+   font-weight: 700;
+   line-height: 140%; /* or 62px */
+   text-transform: capitalize;
+   color: $txt-title-color;
+
+   &_type {
+      &_h1 {
+         font-size: 44px;
+      }
+
+      &_h2 {
+         font-size: 32px;
+      }
+
+      &_h3 {
+         font-size: 24px;
+      }
+   }
+
+   &_color {
+      &_white {
+         color: $main-white-color;
+      }
+   }
+
+   @media screen and (max-width: 768px) {
+      &_type {
+         &_h1 {
+            font-size: 28px;
+         }
+
+         &_h2 {
+            font-size: 24px;
+         }
+
+         &_h3 {
+            font-size: 18px;
+         }
+      }
+   }
+}

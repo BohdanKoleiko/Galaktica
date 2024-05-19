@@ -1,0 +1,29 @@
+.about {
+   &__inner {
+      padding: 60px 0;
+   }
+
+   &__title {
+      text-align: center;
+      margin-bottom: 40px;
+   }
+
+   &__descr {
+      display: flex;
+      justify-content: space-between;
+      column-gap: calc(170 * 100% / 1140);
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .about {
+      &__inner {
+         padding: 40px 0;
+      }
+
+      &__descr {
+         flex-direction: column;
+         row-gap: 24px;
+      }
+   }
+}

@@ -30,6 +30,10 @@
    &__nav-header {
       display: none;
    }
+
+   &__menu-wrapper {
+      display: flex;
+   }
 }
 
 @media screen and (max-width: 992px) {
@@ -75,7 +79,6 @@
       }
 
       &__menu-wrapper {
-         display: flex;
          flex-direction: column;
          justify-content: center;
          row-gap: 32px;

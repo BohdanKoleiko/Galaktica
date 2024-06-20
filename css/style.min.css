@@ -200,7 +200,7 @@ fieldset {
    margin: 0;
 }
 @font-face {
-   font-family: Exo;
+   font-family: "Exo";
    src: url("../fonts/Exo/Exo-Bold.woff2") format("woff2"),
       url("../fonts/Exo/Exo-Bold.woff") format("woff"),
       url("../fonts/Exo/Exo-Bold.ttf") format("truetype");
@@ -250,7 +250,7 @@ fieldset {
    }
 }
 body {
-   font-family: Exo, "Open Sans", sans-serif;
+   font-family: "Open Sans", sans-serif;
    font-size: 16px;
    font-weight: 400;
    line-height: 1.3;
@@ -354,7 +354,7 @@ html {
    }
 }
 .title {
-   font-family: Exo, sans-serif;
+   font-family: "Exo", sans-serif;
    font-weight: 700;
    line-height: 140%;
    text-transform: capitalize;
@@ -404,7 +404,7 @@ html {
    animation-iteration-count: infinite;
 }
 .row__txt {
-   font-family: Exo, sans-serif;
+   font-family: "Exo", sans-serif;
    font-weight: 700;
    font-size: 24px;
    line-height: 120%;
@@ -582,6 +582,10 @@ html {
       display: block;
    }
 }
+.hero {
+   content-visibility: auto;
+   contain-intrinsic-size: 739px;
+}
 .hero__inner {
    padding-top: 42px;
    padding-bottom: 32px;
@@ -639,6 +643,10 @@ html {
       transform: translate(-50%, -50%) rotate(8.5deg);
    }
 }
+.partners {
+   content-visibility: auto;
+   contain-intrinsic-size: 611px;
+}
 .partners__inner {
    padding: 75px 0;
 }
@@ -676,6 +684,10 @@ html {
       grid-column-end: auto;
    }
 }
+.about {
+   content-visibility: auto;
+   contain-intrinsic-size: 374.39px;
+}
 .about__inner {
    padding: 60px 0;
 }
@@ -696,6 +708,10 @@ html {
       flex-direction: column;
       row-gap: 24px;
    }
+}
+.services {
+   content-visibility: auto;
+   contain-intrinsic-size: 611px;
 }
 .services__inner {
    padding: 75px 0;
@@ -795,6 +811,10 @@ html {
       flex-direction: column;
    }
 }
+.choice {
+   content-visibility: auto;
+   contain-intrinsic-size: 469.59px;
+}
 .choice__inner {
    padding: 64px 0 96px;
 }
@@ -808,7 +828,7 @@ html {
 .choice__title {
    position: relative;
    z-index: 1;
-   font-family: Exo, sans-serif;
+   font-family: "Exo", sans-serif;
    font-weight: 700;
    font-size: 44px;
    line-height: 140%;
